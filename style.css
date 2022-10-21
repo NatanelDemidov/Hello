@@ -1,0 +1,7 @@
+@import "css/index.css";
+@import "css/hub.css";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

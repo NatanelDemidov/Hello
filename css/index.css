@@ -1,0 +1,97 @@
+.main_container{
+    background-image: linear-gradient(45deg, #f38ffa,#539eee);
+    height: 200vh;
+    overflow: hidden;
+}
+.title{
+    text-align: center;
+}
+.__hello__{
+    text-align: center;
+    font-size: 75px;
+    color: rgb(0, 0, 0);
+    transform: translate(0,210px);
+}
+.main_btn{
+    text-align: center;
+    display: block;
+    transform: translate(0,350px);
+}
+.arrow{
+    border-radius: 50%;
+    transition: 1s;
+    animation: animation 3s ease-in 0s infinite;
+}
+.arrow:hover{
+    transform: scale(1.5);
+    box-shadow: 0 0 10px brown;
+}
+.my{
+    animation: wall 3s ease-in-out 0s infinite;
+    display: inline-block;
+}
+.games{
+    animation: wall 3s ease-in-out 0.3s infinite;
+    display: inline-block;
+}
+.hub{
+    animation: wall 3s ease-in-out 0.6s infinite;
+    display: inline-block;
+}
+.man{
+    animation: __hello__ 3s ease-in-out 0.6s infinite;
+    display: inline-block;
+    margin: auto;
+    display: block;
+    background-color: #FDF5E6;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 1%;
+    filter: brightness(0.4);
+    transition: 1s;
+    box-shadow: 10px 5px 4px black;
+    padding: 30px;
+    opacity: 0.5;
+}
+.man:hover{
+    transform: scale(1.1);
+    filter: none;
+    opacity: 1;
+}
+@keyframes __hello__{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,-100px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes wall{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,-100px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes animation{
+    0%{
+        transform: scale(1);
+        box-shadow:none ;
+    }
+    50%{
+        transform: scale(1.4);
+        box-shadow: 0 0 10px brown;
+    }
+    100%{
+        transform: scale(1);
+        box-shadow:none ;
+    }
+}
